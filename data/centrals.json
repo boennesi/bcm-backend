@@ -2,6 +2,7 @@
     {
         "endpoint": "https://interview.beta.bcmenergy.fr/hawes",
         "format": "json",
+        "period": 900,
         "properties": {
             "start": "start",
             "end": "end",
@@ -11,6 +12,7 @@
     {
         "endpoint": "https://interview.beta.bcmenergy.fr/barnsley",
         "format": "json",
+        "period": 1800,
         "properties": {
             "start": "start_time",
             "end": "end_time",
@@ -20,6 +22,7 @@
     {
         "endpoint": "https://interview.beta.bcmenergy.fr/hounslow",
         "format": "csv",
+        "period": 3600,
         "properties": {
             "start": "debut",
             "end": "fin",

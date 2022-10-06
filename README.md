@@ -22,6 +22,7 @@ Node > 16.0
 - [] Verify command line arguments validity
 - [X] Retrieve centrals data
 - [X] Format centrals data
+- [X] Convert segments to same duration
 - [] Fill missing data
 - [] Aggregate segments power
 - [] Output data
