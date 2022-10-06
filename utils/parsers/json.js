@@ -8,3 +8,7 @@ export function fromJSON(rawData, { start, end, power }) {
     };
   });
 }
+
+export function toJSON(productionSegments) {
+  return productionSegments;
+}
