@@ -15,3 +15,11 @@ export function completeCentralSegments(segments, period) {
     return completeSegments;
   }, []);
 }
+
+export function fillMissingSegments(segments) {
+  /**
+   * TODO
+   * I don't know if i will have the time to finish the exercice
+   * So for now i will leave this special case aside and come back for it later
+   */
+}
