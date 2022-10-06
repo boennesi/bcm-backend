@@ -25,7 +25,7 @@ Node > 16.0
 - [X] Convert segments to same duration
 - [] Fill missing data
 - [X] Aggregate segments power
-- [] Output data
+- [X] Output data
 
 ## Author
 
