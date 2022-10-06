@@ -4,6 +4,10 @@
 
 Node > 16.0
 
+## Usability
+
+`node index.js from=DD-MM-YYY to=DD-MM-YYYY format=json|csv`
+
 ## INFORMATION
 
 - This is a 2 hours project
@@ -26,6 +30,16 @@ Node > 16.0
 - [] Fill missing data
 - [X] Aggregate segments power
 - [X] Output data
+
+## RETEX AFTER 2 HOURS
+
+### GOODS
+- Satisfy to have an aggregated output at the end
+
+### BADS
+- No tests, should have been a great idea to add some, but it was difficult with the choice not to use any node_modules
+- No node_modules, it would have been easier with some like `date-fns` or `node-fetch`
+- Not enough comments (JSDOC), I started to write some, but it takes time and i couldn't have finish it. I think variable names are quite evocative, but the project needs some typedef to be more readable
 
 ## Author
 
