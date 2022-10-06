@@ -24,7 +24,7 @@ Node > 16.0
 - [X] Format centrals data
 - [X] Convert segments to same duration
 - [] Fill missing data
-- [] Aggregate segments power
+- [X] Aggregate segments power
 - [] Output data
 
 ## Author

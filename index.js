@@ -1,14 +1,17 @@
 import { argv } from "node:process";
 
-import { fetchAllCentralsData } from "./api/index.js";
+import { getAllProductions } from "./api/index.js";
+import { aggregateCentralsSegmentsProduction } from "./utils/aggregate.js";
 import parseCliArguments from "./utils/args.js";
 import { assertRequiredArgs } from "./utils/assertions.js";
 
 try {
   const args = parseCliArguments(argv);
   assertRequiredArgs(args);
-  const rawCentralsData = await fetchAllCentralsData(args.from, args.to);
-  console.log(rawCentralsData);
+  const productionSegments = await getAllProductions(args.from, args.to);
+  const aggregatedProductionSegments =
+    await aggregateCentralsSegmentsProduction(productionSegments);
+  console.log(aggregatedProductionSegments);
 } catch (error) {
-  console.error(error.message);
+  console.error(error);
 }
