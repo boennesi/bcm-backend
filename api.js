@@ -2,9 +2,9 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import querystring from "node:querystring";
 
-import fetch from "../utils/fetch.js";
-import { parse } from "../parsers/index.js";
-import { completeCentralSegments } from "../utils/complete.js";
+import fetch from "./utils/lib/fetch.js";
+import { parse } from "./utils/parsers/index.js";
+import { completeCentralSegments } from "./utils/complete.js";
 
 async function getCentralProduction(
   from,
