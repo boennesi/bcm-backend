@@ -1,0 +1,26 @@
+[
+    {
+        "endpoint": "https://interview.beta.bcmenergy.fr/hawes",
+        "properties": {
+            "start": "start",
+            "end": "end",
+            "power": "power"
+        }
+    },
+    {
+        "endpoint": "https://interview.beta.bcmenergy.fr/barnsley",
+        "properties": {
+            "start": "start_time",
+            "end": "end_time",
+            "power": "value"
+        }
+    },
+    {
+        "endpoint": "https://interview.beta.bcmenergy.fr/hounslow",
+        "properties": {
+            "start": "debut",
+            "end": "fin",
+            "power": "valeur"
+        }
+    }
+]

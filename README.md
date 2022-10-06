@@ -20,7 +20,7 @@ Node > 16.0
 - [X] Retrieve command line arguments
 - [X] Verify required command line arguments 
 - [] Verify command line arguments validity
-- [] Retrieve centrals data
+- [X] Retrieve centrals data
 - [] Format centrals data
 - [] Fill missing data
 - [] Aggregate segments power
