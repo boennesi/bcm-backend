@@ -1,7 +1,6 @@
 export function fromCSV(rawData, { start, end, power }) {
   const [header, ...centralsRawSegments] = rawData.split("\n");
   const columnNames = header.split(",");
-  console.log(columnNames);
   // columns may be in wrong order, not always start/end/power
   const iStart = columnNames.indexOf(start);
   const iend = columnNames.indexOf(end);
