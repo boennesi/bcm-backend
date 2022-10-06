@@ -17,7 +17,7 @@ Node > 16.0
 
 ## TODOS
 
-- [] Retrieve command line arguments
+- [X] Retrieve command line arguments
 - [] Verify required command line arguments 
 - [] Verify command line arguments validity
 - [] Retrieve centrals data
