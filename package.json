@@ -1,0 +1,20 @@
+{
+  "name": "bcm-backend",
+  "version": "1.0.0",
+  "description": "bcm interview exercice",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boennesi/bcm-backend.git"
+  },
+  "author": "Simon Boennec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boennesi/bcm-backend/issues"
+  },
+  "homepage": "https://github.com/boennesi/bcm-backend#readme"
+}
