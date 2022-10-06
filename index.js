@@ -1,8 +1,8 @@
 import { argv } from "node:process";
 
-import { fetchAllCentralsData } from "./centrals/index.js";
+import { fetchAllCentralsData } from "./api/index.js";
 import parseCliArguments from "./utils/args.js";
-import { assertRequiredArgs } from "./assertions.js";
+import { assertRequiredArgs } from "./utils/assertions.js";
 
 try {
   const args = parseCliArguments(argv);

@@ -3,10 +3,13 @@ import path from "node:path";
 import querystring from "node:querystring";
 
 import fetch from "../utils/fetch.js";
+import { parse } from "../parsers/index.js";
 
-async function fetchCentralData(from, to, endpoint) {
+async function fetchCentralData(from, to, { endpoint, format, properties }) {
   const query = querystring.stringify({ from, to });
-  return fetch(path.join(endpoint, `?${query}`));
+  const rawData = await fetch(path.join(endpoint, `?${query}`));
+  const centralSegments = parse(rawData, format, properties);
+  return centralSegments;
 }
 
 export async function fetchAllCentralsData(from, to) {
@@ -15,6 +18,6 @@ export async function fetchAllCentralsData(from, to) {
   });
   const centralsInfo = JSON.parse(rawCentralsInfo);
   return Promise.all(
-    centralsInfo.map(({ endpoint }) => fetchCentralData(from, to, endpoint))
+    centralsInfo.map((centralInfo) => fetchCentralData(from, to, centralInfo))
   );
 }

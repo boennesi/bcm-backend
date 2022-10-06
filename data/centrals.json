@@ -1,6 +1,7 @@
 [
     {
         "endpoint": "https://interview.beta.bcmenergy.fr/hawes",
+        "format": "json",
         "properties": {
             "start": "start",
             "end": "end",
@@ -9,6 +10,7 @@
     },
     {
         "endpoint": "https://interview.beta.bcmenergy.fr/barnsley",
+        "format": "json",
         "properties": {
             "start": "start_time",
             "end": "end_time",
@@ -17,6 +19,7 @@
     },
     {
         "endpoint": "https://interview.beta.bcmenergy.fr/hounslow",
+        "format": "csv",
         "properties": {
             "start": "debut",
             "end": "fin",
