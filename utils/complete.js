@@ -17,9 +17,15 @@ export function completeCentralSegments(segments, period) {
 }
 
 export function fillMissingSegments(segments) {
-  /**
-   * TODO
-   * I don't know if i will have the time to finish the exercice
-   * So for now i will leave this special case aside and come back for it later
-   */
+  return segments.reduce((completeSegments, segment, index) => {
+    if (segments[index - 1] && segments[index - 1].end !== segment.start) {
+      completeSegments.push({
+        start: segments[index - 1].end,
+        end: segment.start,
+        power: (segments[index - 1].power + segment.power) / 2,
+      });
+    }
+    completeSegments.push(segment);
+    return completeSegments;
+  }, []);
 }

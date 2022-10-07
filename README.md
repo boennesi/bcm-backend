@@ -8,6 +8,10 @@ Node > 16.0
 
 `node index.js from=DD-MM-YYY to=DD-MM-YYYY format=json|csv`
 
+## Tests
+
+`npm i && npm test`
+
 ## INFORMATION
 
 - This is a 2 hours project
@@ -40,6 +44,11 @@ Node > 16.0
 - No tests, should have been a great idea to add some, but it was difficult with the choice not to use any node_modules
 - No node_modules, it would have been easier with some like `date-fns` or `node-fetch`
 - Not enough comments (JSDOC), I started to write some, but it takes time and i couldn't have finish it. I think variable names are quite evocative, but the project needs some typedef to be more readable
+
+## IMPROVMENTS AFTER 2 HOURS
+
+- [X] Fill missing data
+- [X] Add some tests
 
 ## Author
 

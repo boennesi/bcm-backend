@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "mocha test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/boennesi/bcm-backend/issues"
   },
-  "homepage": "https://github.com/boennesi/bcm-backend#readme"
+  "homepage": "https://github.com/boennesi/bcm-backend#readme",
+  "dependencies": {
+    "mocha": "^10.0.0"
+  }
 }
