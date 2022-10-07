@@ -1,7 +1,7 @@
 /**
  * Parse command line arguments returning an object of key/value
  * @param {*} argv
- * @returns Object
+ * @returns {Object}
  */
 export default function parseCliArguments(argv) {
   const [, , ...args] = argv;

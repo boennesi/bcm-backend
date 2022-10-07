@@ -1,3 +1,9 @@
+/**
+ * For each segment with same start and end
+ * Sum the power in one segment
+ * @param {SegmentInfo[]} productionSegments
+ * @returns {SegmentInfo[]}}
+ */
 export function aggregateCentralsSegmentsProduction(productionSegments) {
   return Array.from(
     productionSegments
@@ -12,3 +18,7 @@ export function aggregateCentralsSegmentsProduction(productionSegments) {
       .values()
   );
 }
+
+/**
+ * @typedef {import("../api").SegmentInfo} SegmentInfo
+ */

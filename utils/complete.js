@@ -1,5 +1,9 @@
 const SHORTEST_SEGMENT_IN_SEC = 900; // 15 min
 
+/**
+ * @param {SegmentInfo[]} segments
+ * @returns {SegmentInfo[]}}
+ */
 export function completeCentralSegments(segments, period) {
   if (period === SHORTEST_SEGMENT_IN_SEC) return segments;
   return segments.reduce((completeSegments, segment) => {
@@ -16,6 +20,12 @@ export function completeCentralSegments(segments, period) {
   }, []);
 }
 
+/**
+ * For each missing segment (current segment start different that previous segment end)
+ * complete the data with the average power of the previous and next segment
+ * @param {SegmentInfo[]} segments
+ * @returns {SegmentInfo[]}}
+ */
 export function fillMissingSegments(segments) {
   return segments.reduce((completeSegments, segment, index) => {
     if (segments[index - 1] && segments[index - 1].end !== segment.start) {
@@ -29,3 +39,7 @@ export function fillMissingSegments(segments) {
     return completeSegments;
   }, []);
 }
+
+/**
+ * @typedef {import("../api").SegmentInfo} SegmentInfo
+ */

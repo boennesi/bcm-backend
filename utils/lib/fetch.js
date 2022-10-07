@@ -2,8 +2,8 @@ import https from "node:https";
 
 /**
  * Promisify basic fetch which handles only "https" request
- * @param {*} url
- * @returns Promise
+ * @param {string} url
+ * @returns {Promise}
  */
 export default async function (url) {
   return new Promise((resolve, reject) => {

@@ -49,6 +49,7 @@ Node > 16.0
 
 - [X] Fill missing data
 - [X] Add some tests
+- [X] Add a little bit of JSdoc
 
 ## Author
 
